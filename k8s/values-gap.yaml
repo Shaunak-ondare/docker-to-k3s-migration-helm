@@ -1,0 +1,22 @@
+namespace: gap
+replicaCount: 1
+
+app:
+  name: lumina-app
+
+image:
+  repository: shaunakondare/lumina-jump
+  tag: latest
+
+service:
+  name: lumina-service
+  type: ClusterIP
+  port: 80
+  targetPort: 80
+
+ingress:
+  name: lumina-ingress
+  path: /gap
+
+rootStaticIngress:
+  enabled: false

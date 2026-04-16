@@ -1,0 +1,6 @@
+apiVersion: v2
+name: lumina
+description: Helm chart for the Lumina frontend deployment
+type: application
+version: 0.1.0
+appVersion: "latest"
