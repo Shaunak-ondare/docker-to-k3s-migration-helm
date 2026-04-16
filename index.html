@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumina Jump | Neon Experience</title>
+    <meta name="description" content="A high-fidelity neon jump game built with Vite and Vanilla JS." />
+  </head>
+  <body>
+    <div id="app">
+      <div class="game-container">
+        <!-- HUD -->
+        <div class="hud">
+          <div class="score-display">SCORE: <span id="score">0</span></div>
+          <div class="score-display">HIGH: <span id="highscore">0</span></div>
+        </div>
+
+        <!-- Canvas -->
+        <canvas id="gameCanvas"></canvas>
+
+        <!-- Start Overlay -->
+        <div id="startOverlay" class="overlay">
+          <h1 class="pulse">LUMINA JUMP</h1>
+          <p>Dodge the pulses. Reach the light.</p>
+          <button id="startBtn" class="btn">Start Experience</button>
+        </div>
+
+        <!-- Game Over Overlay -->
+        <div id="gameOverOverlay" class="overlay hidden">
+          <h1>FADED OUT</h1>
+          <p>Your score: <span id="finalScore">0</span></p>
+          <button id="restartBtn" class="btn btn-purple">Re-Illuminate</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
